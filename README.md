@@ -13,4 +13,4 @@ Then the cake app can be composed using the following command:
     `docker-compose up`
 
 This will build the app, through `npm`, `gulp` and finally `webpack` transpilation on a NodeJS server.
-The app will be running on your [localhost](http://localhost:3000)
+This process will take a few minutes and the command line will show the access URLs once completed - The app will be running on your [localhost](http://localhost:3000)
