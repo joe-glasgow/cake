@@ -12,10 +12,10 @@ const maxAge = {
 app.use(express.static('dist', maxAge));
 // images fonts etc
 app.use(express.static('dist/web', maxAge));
-// simple routes
+// useful for server side rendering
 require('./routes')(app);
 
 // non https
 app.listen(port);
-// show app running
+// show app running - BrowserSync uses 3000 in dev mode, assign a diff port to express server
 console.log(`listening on port ${port}`);

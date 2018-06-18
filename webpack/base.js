@@ -6,7 +6,7 @@ const webpack = require('webpack');
  * Modify these to match your project.
  */
 const ASSET_PATH = path.resolve('app');
-const APP_FILE_PATH = `${ASSET_PATH}/index.js`;
+const APP_FILE_PATH = `${ASSET_PATH}/index.jsx`;
 const PUBLIC_PATH = `${path.resolve('dist')}/web`;
 
 module.exports = function (env) {
@@ -35,7 +35,7 @@ module.exports = function (env) {
                     use: [{
                         loader: 'babel-loader',
                         options: {
-                            presets: ['stage-0', 'es2015']
+                            presets: ['stage-0', 'es2015', 'react']
                         }
                     }]
 

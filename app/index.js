@@ -1,1 +1,0 @@
-console.log(`build process working: ${process.env.CAKE_ENDPOINT} is the API address.`);
