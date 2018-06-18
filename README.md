@@ -14,6 +14,7 @@ Then the cake app can be composed using the following command:
 
 This will build the app, through `npm`, `gulp` and finally `webpack` transpilation on a NodeJS server.
 This process will take a few minutes and the command line will show the access URLs once completed - The app will be running on your [localhost](http://localhost:3000)
+*NB* The app uses the (BrowserSync)[https://www.browsersync.io/] plugin extension (e.g for chrome) which is useful for development changes.
 
 Future improvements:
 
