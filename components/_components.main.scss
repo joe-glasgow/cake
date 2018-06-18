@@ -1,0 +1,36 @@
+// Main Nav
+.main-nav {
+  li {
+    padding: 0 $inuit-global-spacing-unit-tiny 0 0;
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+}
+
+// Cake Images
+.cake {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 $inuit-global-spacing-unit-tiny 0 0;
+  p {
+    padding: $inuit-global-spacing-unit-tiny;
+  }
+}
+.cake-image {
+  width: 100%;
+  max-width: 100px;
+}
+
+// Cake Form
+.cake-form-segment {
+  label {
+    margin: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-tiny 0 0;
+  }
+}
+
+.cake-form__button {
+  width: 100%;
+  color: $global-theme-1;
+}

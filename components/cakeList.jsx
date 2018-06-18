@@ -34,11 +34,11 @@ class CakeList extends React.Component {
         if (error) {
             return <div><p>There was an error loading cakes!</p></div>
         }
-        return loading ? <div>Loading cakes... </div> : <div>
+        return loading ? <div>Loading cakes... </div> : <ul className="o-list-inline">
             {
                 cakes.map(({imageUrl, name, id}, index) => <Cake id={id} key={index} imageUrl={imageUrl} name={name}/>)
             }
-        </div>;
+        </ul>;
     }
 }
 

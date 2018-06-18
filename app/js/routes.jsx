@@ -5,7 +5,7 @@ import CakeList from 'components/cakeList';
 import AddCake from 'components/addCakes';
 import CakeDetail from 'components/cakeDetail';
 
-const AppRoutes = () => <div className="container">
+const AppRoutes = () => <div className="o-layout__item">
     <Route exact path="/" component={CakeList}/>
     <Route exact path="/add" component={AddCake}/>
     <Route exact path="/cake/:id" component={CakeDetail}/>

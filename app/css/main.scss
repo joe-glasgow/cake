@@ -98,6 +98,8 @@
 @import "generic/generic.normalize";
 @import "generic/generic.reset";
 @import "generic/generic.shared";
+// fonts
+@import "generic/generic.font";
 
 
 
@@ -137,7 +139,6 @@
 //
 // Build and include your project’s UI components here.
 @import "components/cake.components.buttons";
-
 
 
 

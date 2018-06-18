@@ -63,7 +63,7 @@ class AddCake extends React.Component {
 
     render() {
         const {createFormElements} = this;
-        return <form onSubmit={this.addFormToCakes}>
+        return <form className="o-layout" onSubmit={this.addFormToCakes}>
             {/* model:
             name: <string>,
             comment: <string>,
@@ -75,7 +75,7 @@ class AddCake extends React.Component {
                     return <FormInput key={index} {...props} />
                 })
             }
-            <button>Submit</button>
+            <button className="o-layout__item c-btn--ghost u-margin-top-small u-margin-bottom-small">Submit</button>
         </form>;
     }
 }

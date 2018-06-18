@@ -31,3 +31,15 @@ fieldset {
 dd, ol, ul {
   margin-left: $inuit-global-spacing-unit;
 }
+
+// links
+a, a > * {
+  color: $global-theme-1;
+  &.active, &:hover {
+    color: $global-theme-2;
+  }
+
+  &:visited {
+    color: $global-theme-1;
+  }
+}

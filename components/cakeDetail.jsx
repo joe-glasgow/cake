@@ -23,7 +23,6 @@ class CakeDetail extends React.Component {
                     this.setState({[name]: result[name]});
                 });
                 this.setState({ loading : false });
-                console.log(this.state);
             });
     }
 
