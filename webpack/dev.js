@@ -27,6 +27,7 @@ module.exports = function(env) {
                 // plugin options
             }),
             new MiniCssExtractPlugin('css/bundle.css'),
+            new ExtractTextPlugin("css/styles.css"),
             new OptimizeJsPlugin({
                 sourceMap: true,
             }),
@@ -37,7 +38,7 @@ module.exports = function(env) {
                 exclude: /node_modules/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader,sass-loader']
+                    use: ['css-loader', 'sass-loader']
                 })
             },   {
                 test: require.resolve("react-addons-perf"),

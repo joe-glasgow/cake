@@ -1,11 +1,7 @@
 import * as React from 'react';
 import CakeService from '../common/cakeService';
-import { withRouter } from 'react-router'
-
-const FormInput = (props) => <div>
-    <label htmlFor={props.name}>{props.name.toUpperCase()}</label>
-    <input {...props}/>
-</div>;
+import { withRouter } from 'react-router';
+import FormInput from './formInput';
 
 class AddCake extends React.Component {
     constructor(props) {

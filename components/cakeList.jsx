@@ -36,7 +36,7 @@ class CakeList extends React.Component {
         }
         return loading ? <div>Loading cakes... </div> : <div>
             {
-                cakes.map(({imageUrl, name}, index) => <Cake key={index} imageUrl={imageUrl} name={name}/>)
+                cakes.map(({imageUrl, name, id}, index) => <Cake id={id} key={index} imageUrl={imageUrl} name={name}/>)
             }
         </div>;
     }

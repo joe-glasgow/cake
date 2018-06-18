@@ -24,7 +24,7 @@ class CakeService {
     }
 
     getCake(cakeId) {
-        return fetch(`${process.env.CAKE_ENDPOINT}/${cakeId}`)
+        return fetch(`${process.env.CAKE_ENDPOINT}/cakes/${cakeId}`)
             .then(response => response.json())
             .then(result => result);
     }
